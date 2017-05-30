@@ -19,7 +19,7 @@ fi
 # Variables
 
 [ -z "$STRONGSWAN_TMP" ] && STRONGSWAN_TMP="/tmp/strongswan"
-[ -z "$STRONGSWAN_VERSION" ] && STRONGSWAN_VERSION="5.5.1"
+[ -z "$STRONGSWAN_VERSION" ] && STRONGSWAN_VERSION="5.5.2"
 [ -z "$KEYSIZE" ] && KEYSIZE=16
 #STRONGSWAN_USER
 #STRONGSWAN_PASSWORD
@@ -195,7 +195,7 @@ fi
 call which ipsec
 if [ "$?" = "0" ]; then
   echo "An ipsec binary is already installed and present on this machine!"
-  
+
   if [ "$INTERACTIVE" = "0" ]; then
     bigEcho "Ignored this warning in non-interactive mode..."
   else
